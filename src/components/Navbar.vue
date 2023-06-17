@@ -1,8 +1,10 @@
 <template>
-  <div class="bg-gray-100 h-full">
-    <header class="bg-white shadow h-16">
-      <router-link :to="{name: 'home'}" class="inline-flex items-center h-full px-5">
-      Home
+    <header class="bg-white shadow h-16 flex justify-between items-stretch">
+      <router-link
+        :to="{ name: 'home' }"
+        class="inline-flex items-center h-full px-5 text-orange-500 font-bold"
+      >
+        Home
       </router-link>
       <div class="flex items-center gap-1">
         <router-link :to="{name: 'byCharacter'}" class="inline-flex items-center px-2 h-full transition-colors hover:bg-blue-200">
@@ -17,15 +19,6 @@
           search recipe by Name
         </router-link>
       </div>
-    </header> 
-    </div>
-    <main>
-      <router-view />
-    </main>
-</template>
-
-<script setup>
-</script>
-
-<style scoped>
-</style>
+    </header>
+  </template>
+  
