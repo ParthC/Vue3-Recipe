@@ -8,13 +8,19 @@ import Layout from '../components/Layout.vue'
 
 const routes = [
     {
-        path: '/',
-        component: Layout,
+      path: '/',
+      component: Layout,
+    
     children: [
     {
         path: "/",
         name: "home",
         component: Home,
+    },
+    {
+        path: '/by-recipe-by-name/:recipebyname?',
+        name: 'byRecipeName',
+        component: RecipeByName,
     },
     {
         path: "/character/:item?",
@@ -25,11 +31,6 @@ const routes = [
         path: "/by-ingredient/:ingredient?",
         name: "byIngredient",
         component: RecipeByIngredient,
-    },
-    {
-        path: '/by-recipe-by-name/:recipebyname?',
-        name: 'byRecipeName',
-        component: RecipeByName,
     },
     {
         path: '/recipe/:id?',
