@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const apiCallUrl = axios.create({
-    baseURL: "https://www.themealdb.com/api/json/v1/1"
+const apiCall = axios.create({
+    baseURL: import.meta.env.VITE_API_BASE_URL,
 })
 
 
-export default apiCallUrl;
+export default apiCall;

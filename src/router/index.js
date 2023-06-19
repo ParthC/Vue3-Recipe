@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from '../views/Home.vue'
-import MealList from '../views/MealList.vue'
+import Ingredients from '../views/Ingredients.vue'
 import RecipeByName from '../views/RecipeByName.vue'
 import RecipeByIngredient from '../views/RecipeByIngredient.vue'
-import RecipeDetails from '../views/ReceipeDetails.vue'
+import RecipeDetails from '../views/RecipeDetails.vue'
+import RecipeByLetter from '../views/RecipeByLetter.vue'
 import Layout from '../components/Layout.vue'
 
 const routes = [
@@ -18,14 +19,19 @@ const routes = [
         component: Home,
     },
     {
-        path: '/by-recipe-by-name/:recipebyname?',
-        name: 'byRecipeName',
+        path: "/recipe-by-name/:name?",
+        name: "byRecipeName",
         component: RecipeByName,
     },
     {
-        path: "/character/:item?",
-        name: "byCharacter",
-        component: MealList,
+        path: "/recipe-by-letter/:letter?",
+        name: "byRecipeLetter",
+        component: RecipeByLetter,
+    },
+    {
+        path: "/ingredients",
+        name: "ingredients",
+        component: Ingredients,
     },
     {
         path: "/by-ingredient/:ingredient?",
@@ -33,8 +39,8 @@ const routes = [
         component: RecipeByIngredient,
     },
     {
-        path: '/recipe/:id?',
-        name: 'recipeDetails',
+        path: "/recipe/:id?",
+        name: "recipeDetails",
         component: RecipeDetails,
     }]
     }

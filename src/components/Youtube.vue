@@ -2,9 +2,9 @@
   <a
     :href="href"
     target="_blank"
-    class="px-3 py-2 rounded border-2 text-white border-blue-600 bg-blue-500 hover:bg-blue-600 transition-colors"
+    class="px-3 py-2 rounded border-2 text-black border-black bg-blue-500 transition-colors font-semibold"
   >
-    <slot>YouTube</slot>
+    <slot>Goto YouTube</slot>
   </a>
 </template>
   

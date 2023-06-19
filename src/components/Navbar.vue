@@ -1,22 +1,22 @@
 <template>
-  <header class="bg-white shadow h-16 flex justify-between items-stretch">
+  <header class="bg-blue-400 shadow h-16 flex justify-between items-stretch">
     <router-link
       :to="{ name: 'home' }"
-      class="inline-flex items-center h-full px-5 text-blue-500 font-bold"
+      class="inline-flex items-center h-full px-5 text-black font-semibold"
     >
       Home
     </router-link>
     <div class="flex items-center gap-1">
-        <router-link :to="{name: 'byCharacter'}" class="inline-flex items-center px-2 h-full transition-colors hover:bg-blue-500 hover:text-white">
-          Search recipe by Character
+        <router-link :to="{name: 'byRecipeName'}" class="inline-flex items-center px-2 h-full transition-colors hover:bg-blue-500 hover:text-white text-black font-semibold">
+          Search Recipe
         </router-link>
 
-        <router-link :to="{name: 'byIngredient'}" class="inline-flex items-center px-2 h-full transition-colors hover:bg-blue-500 hover:text-white">
-          Search recipe by Ingredient
+        <router-link :to="{name: 'byRecipeLetter'}" class="inline-flex items-center px-2 h-full transition-colors hover:bg-blue-500 hover:text-white text-black font-semibold">
+          Recipe Letter
         </router-link>
 
-        <router-link :to="{name: 'byRecipeName'}" class="inline-flex items-center px-2 h-full transition-colors hover:bg-blue-500 hover:text-white">
-          search recipe by Name
+        <router-link :to="{name: 'ingredients'}" class="inline-flex items-center px-2 h-full transition-colors hover:bg-blue-500 hover:text-white text-black font-semibold">
+          Recipe Ingredient
         </router-link>
     </div>
   </header>
