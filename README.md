@@ -9,6 +9,9 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 - To install `npm install`
 - Run `npm run dev`
 
+# Demo Link
+
+- `https://vue-recipe-36f34.web.app/`
 
 ## Recommended IDE Setup
 
