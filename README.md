@@ -11,7 +11,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 # Demo
 
-- [Click For Demo](https://vue-recipe-36f34.web.app/)
+- [https://vue-recipe-36f34.web.app/](https://vue-recipe-36f34.web.app/)
 
 ## Recommended IDE Setup
 
