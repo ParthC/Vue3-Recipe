@@ -7,7 +7,7 @@
         v-model="keyword"
         type="text"
         class="rounded border-2 bg-white border-gray-200 focus:ring-blue-500 focus:border-blue-500 w-full"
-        placeholder="Type Recipe......."
+        placeholder="Type Recipe Name......."
         @change="searchRecipe"
       />
   </div>
@@ -29,7 +29,7 @@ function searchRecipe() {
   if (keyword.value) {
     store.dispatch("searchRecipe", keyword.value);
   } else {
-    store.commit("setSearchedRecipe", []);
+    store.commit("SET_SEARCHED_RECIPE", []);
   }
 }
 

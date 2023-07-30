@@ -3,7 +3,7 @@
       <RecipeItem v-for="meal of meals" :key="meal.idMeal" :meal="meal" />
     </div>
     <div v-if="!meals.length" class="flex justify-center text-white p-8">
-      There are no meals
+      Oops There are no meals !!!  
     </div>
 </template>
   

@@ -1,15 +1,15 @@
-export function setSearchedRecipe(state, meals) {
+export function SET_SEARCHED_RECIPE(state, meals) {
     state.searchedRecipe = meals || []
 }
 
-export function setRecipeByLetter(state, meals) {
+export function SET_RECIPE_BY_LETTER(state, meals) {
     state.recipeByLetter = meals || []
 }
 
-export function setRecipeByIngredient(state, meals) {
+export function SET_RECIPE_BY_INGREDIENT(state, meals) {
     state.recipeByIngredients = meals || []
 }
 
-export function setIngredient(state, ingredient) {
+export function SET_INGREDIENT(state, ingredient) {
     state.ingredient = ingredient
 }

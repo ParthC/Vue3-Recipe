@@ -41,7 +41,7 @@
   });
   
   const openIngredient = (ingredient) => {
-    store.commit('setIngredient', ingredient)
+    store.commit('SET_INGREDIENT', ingredient)
     router.push({
       name: "byIngredient",
       params: { ingredient: ingredient.strIngredient },
